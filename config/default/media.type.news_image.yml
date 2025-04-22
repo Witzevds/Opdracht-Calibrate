@@ -1,0 +1,13 @@
+uuid: a30d7415-739e-49eb-a4c2-87de8fc8dbc6
+langcode: en
+status: true
+dependencies: {  }
+id: news_image
+label: 'news image'
+description: ''
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image_1
+field_map: {  }

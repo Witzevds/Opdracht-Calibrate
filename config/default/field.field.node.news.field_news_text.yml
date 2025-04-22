@@ -1,0 +1,19 @@
+uuid: e3879ee9-ecef-444e-b96a-958e2739c4d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_news_text
+    - node.type.news
+id: node.news.field_news_text
+field_name: field_news_text
+entity_type: node
+bundle: news
+label: 'News Text'
+description: 'This is the article itself'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long
