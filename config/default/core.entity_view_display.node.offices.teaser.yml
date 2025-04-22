@@ -1,18 +1,19 @@
-uuid: 0a782e05-27e3-400a-a6d1-225720fe11db
+uuid: 46a39022-33f8-4517-9edd-a7a68076801b
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.teaser
     - field.field.node.offices.field_country
     - field.field.node.offices.field_office_image
     - field.field.node.offices.field_office_name
     - node.type.offices
   module:
     - user
-id: node.offices.default
+id: node.offices.teaser
 targetEntityType: node
 bundle: offices
-mode: default
+mode: teaser
 content:
   field_country:
     type: entity_reference_label
@@ -20,16 +21,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 107
-    region: content
-  field_office_image:
-    type: entity_reference_entity_view
-    label: above
-    settings:
-      view_mode: default
-      link: false
-    third_party_settings: {  }
-    weight: 105
+    weight: 2
     region: content
   field_office_name:
     type: string
@@ -37,11 +29,12 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 106
+    weight: 1
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
-hidden: {  }
+hidden:
+  field_office_image: true

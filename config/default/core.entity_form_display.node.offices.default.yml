@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.offices.field_country
     - field.field.node.offices.field_office_image
     - field.field.node.offices.field_office_name
     - node.type.offices
@@ -17,6 +18,12 @@ content:
   created:
     type: datetime_timestamp
     weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_country:
+    type: options_select
+    weight: 127
     region: content
     settings: {  }
     third_party_settings: {  }

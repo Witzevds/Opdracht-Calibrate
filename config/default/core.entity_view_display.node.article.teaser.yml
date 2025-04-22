@@ -7,11 +7,10 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.field_image
+    - field.field.node.article.field_promo
     - field.field.node.article.field_tags
-    - image.style.medium
     - node.type.article
   module:
-    - image
     - text
     - user
 _core:
@@ -29,16 +28,13 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-  field_image:
-    type: image
-    label: hidden
+  field_promo:
+    type: entity_reference_label
+    label: above
     settings:
-      image_link: content
-      image_style: medium
-      image_loading:
-        attribute: lazy
+      link: true
     third_party_settings: {  }
-    weight: -1
+    weight: 2
     region: content
   field_tags:
     type: entity_reference_label
@@ -46,10 +42,13 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 10
+    weight: 1
     region: content
   links:
-    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
     region: content
 hidden:
   comment: true
+  field_image: true

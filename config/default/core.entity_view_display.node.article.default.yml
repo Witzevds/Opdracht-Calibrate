@@ -7,12 +7,11 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.field_image
+    - field.field.node.article.field_promo
     - field.field.node.article.field_tags
-    - image.style.wide
     - node.type.article
   module:
     - comment
-    - image
     - text
     - user
 _core:
@@ -36,18 +35,16 @@ content:
       view_mode: default
       pager_id: 0
     third_party_settings: {  }
-    weight: 110
+    weight: 3
     region: content
-  field_image:
-    type: image
-    label: hidden
+  field_promo:
+    type: entity_reference_entity_view
+    label: above
     settings:
-      image_link: ''
-      image_style: wide
-      image_loading:
-        attribute: eager
+      view_mode: default
+      link: false
     third_party_settings: {  }
-    weight: -1
+    weight: 4
     region: content
   field_tags:
     type: entity_reference_label
@@ -55,11 +52,12 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 10
+    weight: 1
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 2
     region: content
-hidden: {  }
+hidden:
+  field_image: true

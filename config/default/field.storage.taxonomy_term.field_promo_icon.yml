@@ -1,0 +1,20 @@
+uuid: bb21dc22-526c-4476-a29d-e5eb72d02b42
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - taxonomy
+id: taxonomy_term.field_promo_icon
+field_name: field_promo_icon
+entity_type: taxonomy_term
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
