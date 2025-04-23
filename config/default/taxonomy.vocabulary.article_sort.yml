@@ -1,9 +1,0 @@
-uuid: d8ca70ee-a832-4017-8e0c-4d73ccaa756d
-langcode: en
-status: true
-dependencies: {  }
-name: 'article sort'
-vid: article_sort
-description: 'Is this article a promo or not'
-weight: 0
-new_revision: false
