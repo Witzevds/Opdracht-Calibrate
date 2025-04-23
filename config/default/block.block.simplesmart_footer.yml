@@ -1,6 +1,6 @@
 uuid: ee3b0183-8263-46c4-9c1a-2fc1cc66526c
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - system.menu.footer
@@ -11,7 +11,7 @@ dependencies:
 id: simplesmart_footer
 theme: simplesmart
 region: header
-weight: 1
+weight: -2
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

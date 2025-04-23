@@ -1,84 +1,3 @@
-/**
- * @file
- * Overall specifications for Mytheme.
- */
-@font-face {
-  font-family: "roboto";
-  src: url("../fonts/roboto/roboto-variable.ttf") format("truetype");
-  font-weight: 100 900;
-  font-style: normal;
-  font-display: swap;
-}
-html {
-  height: 100%;
-}
-
-body {
-  min-height: 100%;
-  font-family: "roboto", sans-serif;
-  line-height: 1.5;
-  word-wrap: break-word;
-  font-size: 87.5%;
-  background-color: lightcoral;
-}
-
-.link {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-h1 {
-  font-size: 2.5em;
-  line-height: 1.2;
-}
-h1 a {
-  border-bottom: none;
-}
-
-h2 a {
-  border-bottom: none;
-}
-
-p {
-  margin: 0 0 1.2em;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-ul,
-ol {
-  margin: 0;
-  padding: 0 0 0.25em 1em;
-}
-ul[dir=rtl],
-ol[dir=rtl] {
-  padding: 0 1em 0.25em 0;
-}
-ul ol,
-ul ul,
-ol ol,
-ol ul {
-  margin: 0;
-  padding: 0 0 0.25em 1em;
-}
-ul ol[dir=rtl],
-ul ul[dir=rtl],
-ol ol[dir=rtl],
-ol ul[dir=rtl] {
-  padding: 0 1em 0.25em 0;
-}
-
-.header {
-  background-color: black;
-  padding: 20px;
-  border-bottom: 1px solid #e7e7e7;
-}
-.header img {
-  max-width: 3rem;
-}
-
 .layout-container {
   font-size: 1em;
   border-radius: 5px;
@@ -106,6 +25,31 @@ ol ul[dir=rtl] {
   padding-left: 10px;
   margin-bottom: 20px;
   clear: both;
+}
+
+.layout-content {
+  padding: 0px;
+  height: auto;
+  margin-bottom: 5rem;
+}
+
+.layout__region--first .views-element-container,
+.layout__region--second .views-element-container {
+  border: black solid 1px;
+  width: 95%;
+  padding: 2rem;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+.layout__region--first .views-element-container span,
+.layout__region--second .views-element-container span {
+  color: var(--color-accent);
+}
+
+.views-element-container {
+  display: flex;
+  gap: 2rem;
+  border-radius: 1rem;
 }
 
 /* ---------- General Layout ---------- */
@@ -153,6 +97,167 @@ body.sidebar-second,
 #comments form,
 .comment-forbidden {
   display: none;
+}
+
+.header {
+  background-color: #ffc423;
+  padding: 20px;
+}
+.header img {
+  max-width: 3rem;
+}
+
+.simplesmartmenu {
+  background: var(--color-primary);
+  padding: 1rem;
+}
+.simplesmartmenu .region-simplesmartmenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.simplesmartmenu .region-simplesmartmenu .menu-and-search {
+  display: flex;
+  gap: 2rem;
+}
+.simplesmartmenu .site-logo {
+  max-width: 6rem;
+}
+.simplesmartmenu nav {
+  display: flex;
+  gap: 2rem;
+}
+.simplesmartmenu .menu {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.simplesmartmenu .menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  font-size: 1.4rem;
+}
+.simplesmartmenu .menu a:hover {
+  background-color: #333;
+}
+
+.region-footer {
+  background-color: var(--color-primary);
+  height: 5rem;
+  border: none;
+}
+
+.layout-container,
+.site-footer {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+.search-bar .search-bar__input {
+  flex: 1;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-right: 1rem;
+  background-color: var(--color-accent);
+}
+
+/*
+  Artevelde hogeschool CSS Reset v0.2
+  Adapted version from Josh's Custom CSS Reset https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  3. Allow percentage-based heights in the application
+*/
+html {
+  height: 100%;
+}
+
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  min-height: 100%;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  background-color: #fff1cf;
+}
+
+:root {
+  --color-accent: #ffc423;
+  --color-primary: #222;
+  --color-secondary: #fff1cf;
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url("../../fonts/roboto/roboto-variable.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: "roboto", sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
 }
 
 /**

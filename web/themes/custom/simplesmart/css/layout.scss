@@ -24,3 +24,30 @@
   margin-bottom: 20px;
   clear: both;
 }
+.layout-content {
+  padding: 0px;
+
+  height: auto;
+  margin-bottom: 5rem;
+}
+
+.layout__region--first,
+.layout__region--second {
+  & .views-element-container {
+    border: black solid 1px;
+    width: 95%;
+    padding: 2rem;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+
+    & span {
+      color: var(--color-accent);
+    }
+  }
+}
+
+.views-element-container {
+  display: flex;
+  gap: 2rem;
+  border-radius: 1rem;
+}

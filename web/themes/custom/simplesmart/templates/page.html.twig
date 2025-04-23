@@ -50,8 +50,17 @@
 	</header>
 	{% if page.simplesmartmenu %}
 
-		<div id="simplesmartmenu" class="content">
-			{{ page.simplesmartmenu }}
+		<div class="simplesmartmenu" id="simplesmartmenu" class="content">
+			<div class="region region-simplesmartmenu">
+				<div class="logo">
+					{{ page.simplesmartmenu.simplesmart_site_branding }}
+				</div>
+				<div class="menu-and-search">
+					{{ page.simplesmartmenu.simplesmart_main_menu }}
+					{{ page.simplesmartmenu.simplesmart_search_form_narrow }}
+				</div>
+			</div>
+
 		</div>
 	{% endif %}
 	{{ page.breadcrumb }}

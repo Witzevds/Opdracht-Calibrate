@@ -1,6 +1,6 @@
 uuid: aeb55841-9189-4f08-ad18-8ffb2f2fbc39
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - system.menu.account
@@ -13,7 +13,7 @@ _core:
 id: simplesmart_account_menu
 theme: simplesmart
 region: header
-weight: -5
+weight: -7
 provider: null
 plugin: 'system_menu_block:account'
 settings:

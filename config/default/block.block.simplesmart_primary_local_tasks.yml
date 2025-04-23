@@ -1,6 +1,6 @@
 uuid: b2f4e992-39fc-430a-a161-3ba133c966c2
 langcode: en
-status: false
+status: true
 dependencies:
   theme:
     - simplesmart
@@ -9,7 +9,7 @@ _core:
 id: simplesmart_primary_local_tasks
 theme: simplesmart
 region: header
-weight: -2
+weight: -5
 provider: null
 plugin: local_tasks_block
 settings:
