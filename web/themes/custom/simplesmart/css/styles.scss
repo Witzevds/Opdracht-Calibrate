@@ -1,0 +1,81 @@
+@use 'elements';
+@use 'components/header';
+@use 'layout';
+@use 'print';
+
+
+/**
+ * @file
+ * Overall specifications for Mytheme.
+ */
+ @font-face {
+  font-family: "roboto";
+  src: url("../fonts/roboto/roboto-variable.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: "roboto", sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  line-height: 1.5;
+  word-wrap: break-word; 
+  font-size: 87.5%;
+}
+
+.link {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-size: 2.5em;
+  line-height: 1.2;
+}
+h1 a {
+  border-bottom: none;
+}
+
+h2 a {
+  border-bottom: none;
+}
+
+p {
+  margin: 0 0 1.2em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0 0 0.25em 1em;
+}
+ul[dir=rtl],
+ol[dir=rtl] {
+  padding: 0 1em 0.25em 0;
+}
+ul ol,
+ul ul,
+ol ol,
+ol ul {
+  margin: 0;
+  padding: 0 0 0.25em 1em;
+}
+ul ol[dir=rtl],
+ul ul[dir=rtl],
+ol ol[dir=rtl],
+ol ul[dir=rtl] {
+  padding: 0 1em 0.25em 0;
+}
+
+/*# sourceMappingURL=styles.css.map */

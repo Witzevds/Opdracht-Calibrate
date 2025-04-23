@@ -1,0 +1,25 @@
+uuid: 40577790-435e-4f61-ae17-06f62e1e07b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - simplesmart
+id: simplesmart_mainnavigation
+theme: simplesmart
+region: content
+weight: -7
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

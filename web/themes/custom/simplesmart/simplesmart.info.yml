@@ -1,0 +1,19 @@
+name: "Simple Smart Classy Version"
+type: theme
+description: "A custom theme for the Simple Smart project."
+core_version_requirement: ^10 || ^11
+base theme: classy
+
+regions:
+  header: Header
+
+  simplesmartmenu: Navigation
+  content: Content
+  footer: Footer
+  page_top: Page Top
+  page_bottom: Page Bottom
+  search: Search
+
+libraries:
+  - simplesmart/global-css
+  - simplesmart/google-fonts

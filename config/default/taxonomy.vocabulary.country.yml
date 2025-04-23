@@ -1,0 +1,9 @@
+uuid: c976ef44-405f-41f7-9da0-1c6b7fc41384
+langcode: en
+status: true
+dependencies: {  }
+name: country
+vid: country
+description: 'This is the country where the office is located'
+weight: 0
+new_revision: false

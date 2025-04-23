@@ -1,0 +1,8 @@
+uuid: cf288ed7-6110-4307-9b80-35cabce88b6a
+langcode: en
+status: true
+dependencies: {  }
+id: news_title
+label: 'news title'
+revision: false
+description: 'its the title for a news article'

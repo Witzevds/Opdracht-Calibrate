@@ -1,0 +1,31 @@
+uuid: 1fe7d89b-4244-4026-a7aa-c3e9bcfb388a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.teaser_image.field_media_image_2
+    - image.style.large
+    - media.type.teaser_image
+  module:
+    - image
+id: media.teaser_image.default
+targetEntityType: media
+bundle: teaser_image
+mode: default
+content:
+  field_media_image_2:
+    type: image
+    label: visually_hidden
+    settings:
+      image_link: ''
+      image_style: large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

@@ -1,0 +1,15 @@
+global-css:
+  version: 1.0
+  css:
+    theme:
+      css/styles.css: {}
+
+google-fonts:
+  remote: true
+  license:
+    name: Open Font License (OFL)
+    url: https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
+  css:
+    theme:
+      "https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap":
+        type: external

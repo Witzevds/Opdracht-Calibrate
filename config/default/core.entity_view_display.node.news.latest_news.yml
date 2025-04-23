@@ -1,0 +1,146 @@
+uuid: 4f332eb6-4081-4fb6-87c6-3af6e97f6845
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.news.title
+    - core.entity_view_mode.node.latest_news
+    - field.field.node.news.field_news_image
+    - field.field.node.news.field_news_summary
+    - field.field.node.news.field_news_text
+    - node.type.news
+  module:
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          b8aec53c-671a-4594-9495-037b84adb304:
+            uuid: b8aec53c-671a-4594-9495-037b84adb304
+            region: first
+            configuration:
+              id: 'field_block:node:news:field_news_image'
+              label: 'News Image'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: media_thumbnail
+                label: inline
+                settings:
+                  image_link: content
+                  image_style: medium
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          0105864a-a2af-4fcd-8aa0-10b143c99185:
+            uuid: 0105864a-a2af-4fcd-8aa0-10b143c99185
+            region: second
+            configuration:
+              id: 'field_block:node:news:title'
+              label: 'News title'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: inline
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          bb0f5bde-9f70-4894-aab6-17a2434b3f27:
+            uuid: bb0f5bde-9f70-4894-aab6-17a2434b3f27
+            region: second
+            configuration:
+              id: 'field_block:node:news:field_news_summary'
+              label: 'News Summary'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: basic_string
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          f25e39c2-09ba-4265-affa-bb5bd8b4ecae:
+            uuid: f25e39c2-09ba-4265-affa-bb5bd8b4ecae
+            region: content
+            configuration:
+              id: 'field_block:node:news:field_news_text'
+              label: 'News Text'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: basic_string
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.news.latest_news
+targetEntityType: node
+bundle: news
+mode: latest_news
+content:
+  field_news_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_news_summary:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_news_text:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

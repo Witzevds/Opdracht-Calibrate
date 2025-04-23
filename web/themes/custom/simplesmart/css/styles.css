@@ -1,0 +1,238 @@
+/**
+ * @file
+ * Overall specifications for Mytheme.
+ */
+@font-face {
+  font-family: "roboto";
+  src: url("../fonts/roboto/roboto-variable.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  font-family: "roboto", sans-serif;
+  line-height: 1.5;
+  word-wrap: break-word;
+  font-size: 87.5%;
+  background-color: lightcoral;
+}
+
+.link {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-size: 2.5em;
+  line-height: 1.2;
+}
+h1 a {
+  border-bottom: none;
+}
+
+h2 a {
+  border-bottom: none;
+}
+
+p {
+  margin: 0 0 1.2em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0 0 0.25em 1em;
+}
+ul[dir=rtl],
+ol[dir=rtl] {
+  padding: 0 1em 0.25em 0;
+}
+ul ol,
+ul ul,
+ol ol,
+ol ul {
+  margin: 0;
+  padding: 0 0 0.25em 1em;
+}
+ul ol[dir=rtl],
+ul ul[dir=rtl],
+ol ol[dir=rtl],
+ol ul[dir=rtl] {
+  padding: 0 1em 0.25em 0;
+}
+
+.header {
+  background-color: black;
+  padding: 20px;
+  border-bottom: 1px solid #e7e7e7;
+}
+.header img {
+  max-width: 3rem;
+}
+
+.layout-container {
+  font-size: 1em;
+  border-radius: 5px;
+  margin: auto;
+  position: relative;
+  clear: both;
+}
+
+.region-content {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  flex-direction: column;
+}
+
+.region-header {
+  max-width: 960px;
+  margin: 0px;
+  height: 150px;
+}
+
+.site-logo {
+  float: left;
+  padding-top: 35px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  clear: both;
+}
+
+/* ---------- General Layout ---------- */
+body,
+input,
+textarea,
+select {
+  color: #000;
+  background: none;
+}
+
+body.two-sidebars,
+body.sidebar-first,
+body.sidebar-second,
+#sidebar-first,
+#sidebar-second,
+.navigation,
+#toolbar,
+.site-footer,
+.tabs,
+.shortcut-action {
+  display: none;
+}
+
+.one-sidebar .main-content,
+.two-sidebars .main-content {
+  width: 100%;
+}
+
+.featured-bottom {
+  width: 960px;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.featured-bottom-first,
+.featured-bottom-second,
+.featured-bottom-third {
+  width: 250px;
+}
+
+/* ---------- Node Pages ---------- */
+#comments .title,
+#comments form,
+.comment-forbidden {
+  display: none;
+}
+
+/**
+ * @file
+ * Overall specifications for Mytheme.
+ */
+@font-face {
+  font-family: "roboto";
+  src: url("../fonts/roboto/roboto-variable.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: "roboto", sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  line-height: 1.5;
+  word-wrap: break-word;
+  font-size: 87.5%;
+}
+
+.link {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-size: 2.5em;
+  line-height: 1.2;
+}
+
+h1 a {
+  border-bottom: none;
+}
+
+h2 a {
+  border-bottom: none;
+}
+
+p {
+  margin: 0 0 1.2em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0 0 0.25em 1em;
+}
+
+ul[dir=rtl],
+ol[dir=rtl] {
+  padding: 0 1em 0.25em 0;
+}
+
+ul ol,
+ul ul,
+ol ol,
+ol ul {
+  margin: 0;
+  padding: 0 0 0.25em 1em;
+}
+
+ul ol[dir=rtl],
+ul ul[dir=rtl],
+ol ol[dir=rtl],
+ol ul[dir=rtl] {
+  padding: 0 1em 0.25em 0;
+}
+
+
+
+/*# sourceMappingURL=styles.css.map */

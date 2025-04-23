@@ -1,0 +1,32 @@
+uuid: 80f4f9cf-84f5-4be6-ae80-151135890643
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.media_library
+    - field.field.media.news_image.field_media_image_1
+    - image.style.medium
+    - media.type.news_image
+  module:
+    - image
+id: media.news_image.media_library
+targetEntityType: media
+bundle: news_image
+mode: media_library
+content:
+  thumbnail:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_media_image_1: true
+  name: true
+  uid: true
