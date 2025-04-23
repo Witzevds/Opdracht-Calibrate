@@ -27,6 +27,8 @@ module:
   help: 0
   history: 0
   image: 0
+  layout_builder: 0
+  layout_discovery: 0
   link: 0
   media: 0
   media_library: 0
@@ -55,4 +57,7 @@ theme:
   olivero: 0
   claro: 0
   stark: 0
+  stable: 0
+  classy: 0
+  simplesmart: 0
 profile: standard

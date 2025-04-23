@@ -4,12 +4,12 @@ definitions:
   contact__site_page:
     menu_name: footer
     parent: ''
-    weight: 0
+    weight: -47
     expanded: false
-    enabled: true
+    enabled: false
   standard__front_page:
-    weight: -50
     menu_name: main
     parent: ''
+    weight: 0
     expanded: false
-    enabled: true
+    enabled: false

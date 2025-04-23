@@ -1,16 +1,16 @@
-uuid: 4d59c90a-3a5a-4223-907e-9f48ab1bf7dd
+uuid: b5344ddc-a5f1-493a-b269-feec9ba4b1a4
 langcode: en
 status: false
 dependencies:
   module:
     - system
   theme:
-    - olivero
+    - classy
 _core:
   default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
-id: olivero_powered
-theme: olivero
-region: footer_bottom
+id: classy_powered
+theme: classy
+region: sidebar_first
 weight: 0
 provider: null
 plugin: system_powered_by_block

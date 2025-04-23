@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.latest_news
     - field.storage.node.field_news_summary
     - node.type.news
     - system.menu.main
@@ -154,7 +154,8 @@ display:
       row:
         type: 'entity:node'
         options:
-          view_mode: teaser
+          relationship: none
+          view_mode: latest_news
       query:
         type: views_query
         options:

@@ -1,16 +1,16 @@
-uuid: 4d59c90a-3a5a-4223-907e-9f48ab1bf7dd
+uuid: f030ff48-aa2c-49ab-9166-6382f9ca243e
 langcode: en
 status: false
 dependencies:
   module:
     - system
   theme:
-    - olivero
+    - simplesmart
 _core:
   default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
-id: olivero_powered
-theme: olivero
-region: footer_bottom
+id: simplesmart_powered
+theme: simplesmart
+region: header
 weight: 0
 provider: null
 plugin: system_powered_by_block
