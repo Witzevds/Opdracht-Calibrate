@@ -10,8 +10,8 @@ dependencies:
     - simplesmart
 id: simplesmart_footer
 theme: simplesmart
-region: header
-weight: -2
+region: footer
+weight: -7
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

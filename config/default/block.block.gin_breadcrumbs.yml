@@ -1,17 +1,17 @@
-uuid: e4ce7014-7bb7-42b8-95ef-c865f869270c
+uuid: 784edf87-5061-49ca-bd63-3a5ca63d8338
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - system
   theme:
-    - simplesmart
+    - gin
 _core:
-  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
-id: simplesmart_breadcrumbs
-theme: simplesmart
-region: footer
-weight: -5
+  default_config_hash: y9X3xgCsO59pQyzNLzY1D3SDJJxCHILLWkpPnmuTJ2E
+id: gin_breadcrumbs
+theme: gin
+region: breadcrumb
+weight: 0
 provider: null
 plugin: system_breadcrumb_block
 settings:

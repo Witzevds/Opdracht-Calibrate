@@ -1,15 +1,15 @@
-uuid: 80065621-b5a3-45bb-a2cf-a44f9e2338f0
+uuid: 61273b79-9239-4c3e-baea-0643c86c5277
 langcode: en
 status: true
 dependencies:
   theme:
-    - simplesmart
+    - gin
 _core:
-  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
-id: simplesmart_primary_admin_actions
-theme: simplesmart
-region: header
-weight: -4
+  default_config_hash: OQ9aJ-4qVwK1x00o9EOYK4eFDjQr_HLpbPiJaPSVZiQ
+id: gin_local_actions
+theme: gin
+region: content
+weight: -10
 provider: null
 plugin: local_actions_block
 settings:

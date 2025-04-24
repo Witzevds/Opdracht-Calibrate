@@ -1,4 +1,4 @@
-uuid: 79341652-f908-4e16-bad1-45e1e18aff3f
+uuid: 26e366fc-e097-4760-9b69-cfc6339ee5c3
 langcode: en
 status: true
 dependencies:
@@ -10,9 +10,9 @@ dependencies:
     - simplesmart
 _core:
   default_config_hash: KWAiziL39uEzmOJEql_wbUP2RtqGceL3WM2CfxhMelE
-id: simplesmart_main_menu
+id: footerlinks
 theme: simplesmart
-region: header
+region: simplesmartmenu
 weight: -7
 provider: null
 plugin: 'system_menu_block:main'

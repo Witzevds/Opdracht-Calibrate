@@ -11,7 +11,7 @@ _core:
 id: simplesmart_search_form_narrow
 theme: simplesmart
 region: simplesmartmenu
-weight: -5
+weight: -6
 provider: null
 plugin: search_form_block
 settings:
