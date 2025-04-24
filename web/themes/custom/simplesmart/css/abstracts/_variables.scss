@@ -7,3 +7,10 @@ body {
   --color-primary: #222;
   --color-secondary: #fff1cf;
 }
+
+.layout-content {
+  a:hover {
+    background-color: var(--color-accent);
+    color: var(--color-primary);
+  }
+}

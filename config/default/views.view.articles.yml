@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.latest_articles
+    - core.entity_view_mode.node.teaser
     - field.storage.node.field_promo
     - field.storage.node.field_summary
     - node.type.article
@@ -144,7 +145,7 @@ display:
         options:
           offset: 0
           pagination_heading_level: h4
-          items_per_page: 3
+          items_per_page: 6
           total_pages: null
           id: 0
           tags:
@@ -698,12 +699,10 @@ display:
         type: default
         options: {  }
       row:
-        type: fields
+        type: 'entity:node'
         options:
-          default_field_elements: true
-          inline: {  }
-          separator: ''
-          hide_empty: false
+          relationship: none
+          view_mode: teaser
       defaults:
         title: false
         style: false

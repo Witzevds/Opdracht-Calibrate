@@ -1,0 +1,15 @@
+.view-display-id-page_1 {
+  & .view-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+    & article {
+      width: 25vw;
+
+      & img {
+        height: 15rem;
+      }
+    }
+  }
+}

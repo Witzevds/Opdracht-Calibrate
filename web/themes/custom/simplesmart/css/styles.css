@@ -185,6 +185,19 @@ main {
   margin-bottom: 10rem;
 }
 
+.view-display-id-page_1 .view-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+}
+.view-display-id-page_1 .view-content article {
+  width: 25vw;
+}
+.view-display-id-page_1 .view-content article img {
+  height: 15rem;
+}
+
 /*
   Artevelde hogeschool CSS Reset v0.2
   Adapted version from Josh's Custom CSS Reset https://www.joshwcomeau.com/css/custom-css-reset/
@@ -253,6 +266,11 @@ body {
   --color-accent: #ffc423;
   --color-primary: #222;
   --color-secondary: #fff1cf;
+}
+
+.layout-content a:hover {
+  background-color: var(--color-accent);
+  color: var(--color-primary);
 }
 
 @font-face {

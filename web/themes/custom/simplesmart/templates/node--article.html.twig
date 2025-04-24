@@ -60,6 +60,7 @@
  *
  */
 #}
+
 <article{{attributes}}>
 
 	{{ title_prefix }}
@@ -80,8 +81,8 @@
 				{{ date }}{% endtrans %}
 				{{ metadata }}
 			</div>
-		</footer>
+		</div>
 	{% endif %}
-	<div{{content_attributes}}>
-		{{ content }}</div>
-</article>
+</footer>
+<div{{content_attributes}}>
+	{{ content }}</div></article>
