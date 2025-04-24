@@ -1,6 +1,6 @@
 uuid: 80065621-b5a3-45bb-a2cf-a44f9e2338f0
 langcode: en
-status: true
+status: false
 dependencies:
   theme:
     - simplesmart
@@ -9,7 +9,7 @@ _core:
 id: simplesmart_primary_admin_actions
 theme: simplesmart
 region: header
-weight: -4
+weight: -6
 provider: null
 plugin: local_actions_block
 settings:

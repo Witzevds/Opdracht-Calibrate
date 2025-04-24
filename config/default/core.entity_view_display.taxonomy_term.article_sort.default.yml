@@ -5,20 +5,11 @@ dependencies:
   config:
     - field.field.taxonomy_term.article_sort.field_promo_icon
     - taxonomy.vocabulary.article_sort
-  module:
-    - text
 id: taxonomy_term.article_sort.default
 targetEntityType: taxonomy_term
 bundle: article_sort
 mode: default
 content:
-  description:
-    type: text_default
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 0
-    region: content
   field_promo_icon:
     type: entity_reference_entity_view
     label: above
@@ -26,6 +17,7 @@ content:
       view_mode: default
       link: false
     third_party_settings: {  }
-    weight: 1
+    weight: 0
     region: content
-hidden: {  }
+hidden:
+  description: true

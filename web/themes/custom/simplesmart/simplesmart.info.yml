@@ -8,6 +8,7 @@ regions:
   header: Header
   simplesmartmenu: Navigation
   content: Content
+  top_footer: Top Footer
   footer: Footer
   page_top: Page Top
   page_bottom: Page Bottom

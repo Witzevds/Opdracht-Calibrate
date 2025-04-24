@@ -5,9 +5,18 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "gothic";
+  src: url("../fonts/gothic/gothic.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
 
 body {
   font-family: "roboto", sans-serif;
+}
+h2 {
+  font-family: "gothic", sans-serif;
 }
 a {
   color: black;

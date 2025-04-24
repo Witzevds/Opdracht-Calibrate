@@ -12,12 +12,69 @@ dependencies:
     - node.type.article
   module:
     - layout_builder
+    - layout_discovery
     - text
     - user
 third_party_settings:
   layout_builder:
-    enabled: false
+    enabled: true
     allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          e7b2a0e0-006a-4268-9889-316b3b1f44cd:
+            uuid: e7b2a0e0-006a-4268-9889-316b3b1f44cd
+            region: content
+            configuration:
+              id: 'field_block:node:article:field_promo'
+              label: Promo
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_entity_view
+                label: inline
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          cac14193-ad33-490f-b8d3-1e6add22fab1:
+            uuid: cac14193-ad33-490f-b8d3-1e6add22fab1
+            region: content
+            configuration:
+              id: 'field_block:node:article:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          8db490f1-cc09-4b60-beab-fab320017036:
+            uuid: 8db490f1-cc09-4b60-beab-fab320017036
+            region: content
+            configuration:
+              id: 'field_block:node:article:field_summary'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: basic_string
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+        third_party_settings: {  }
 _core:
   default_config_hash: br6izr-iGEu--JvNbCJNtOBpRnxpFLXfoV5y61U9Nqc
 id: node.article.latest_articles

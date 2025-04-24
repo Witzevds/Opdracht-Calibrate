@@ -12,8 +12,8 @@ _core:
   default_config_hash: KWAiziL39uEzmOJEql_wbUP2RtqGceL3WM2CfxhMelE
 id: footerlinks
 theme: simplesmart
-region: simplesmartmenu
-weight: -7
+region: footer
+weight: -6
 provider: null
 plugin: 'system_menu_block:main'
 settings:

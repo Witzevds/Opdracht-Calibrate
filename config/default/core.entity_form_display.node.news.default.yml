@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.news.field_country
     - field.field.node.news.field_news_image
     - field.field.node.news.field_news_summary
     - field.field.node.news.field_news_text
@@ -18,6 +19,12 @@ content:
   created:
     type: datetime_timestamp
     weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_country:
+    type: options_select
+    weight: 127
     region: content
     settings: {  }
     third_party_settings: {  }

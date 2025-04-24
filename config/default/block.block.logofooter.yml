@@ -1,4 +1,4 @@
-uuid: d255e201-24db-49e2-93d6-9a011a69269f
+uuid: e29cd48f-b26e-4711-8e35-5f4007eb3d60
 langcode: en
 status: true
 dependencies:
@@ -8,15 +8,15 @@ dependencies:
     - simplesmart
 _core:
   default_config_hash: n_nlgjggHVfQt2H__zvLOKB2YtjPDbQ5tHijF9LE1aM
-id: simplesmart_site_branding
+id: logofooter
 theme: simplesmart
-region: simplesmartmenu
-weight: -8
+region: footer
+weight: -7
 provider: null
 plugin: system_branding_block
 settings:
   id: system_branding_block
-  label: 'footer logo'
+  label: 'Logo Footer'
   label_display: '0'
   provider: system
   use_site_logo: true

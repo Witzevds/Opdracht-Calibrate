@@ -4,8 +4,8 @@ status: true
 dependencies:
   config:
     - block_content.type.news_title
-    - core.base_field_override.node.news.title
     - core.entity_view_mode.node.latest_news
+    - field.field.node.news.field_country
     - field.field.node.news.field_news_image
     - field.field.node.news.field_news_summary
     - field.field.node.news.field_news_text
@@ -47,25 +47,6 @@ third_party_settings:
           label: News-title
           context_mapping: {  }
         components:
-          748917ee-0173-4833-87f4-a977587f4cec:
-            uuid: 748917ee-0173-4833-87f4-a977587f4cec
-            region: content
-            configuration:
-              id: 'field_block:node:news:title'
-              label: 'News title'
-              label_display: '0'
-              provider: layout_builder
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-              formatter:
-                type: string
-                label: above
-                settings:
-                  link_to_entity: false
-                third_party_settings: {  }
-            weight: 0
-            additional: {  }
           252e953c-7c71-4a73-be19-e63373bc3d9b:
             uuid: 252e953c-7c71-4a73-be19-e63373bc3d9b
             region: content
@@ -83,6 +64,32 @@ third_party_settings:
                 settings: {  }
                 third_party_settings: {  }
             weight: 1
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'News from what country'
+          context_mapping: {  }
+        components:
+          a32be427-bbed-4d8c-8321-8f283c0be820:
+            uuid: a32be427-bbed-4d8c-8321-8f283c0be820
+            region: content
+            configuration:
+              id: 'field_block:node:news:field_country'
+              label: Country
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 0
             additional: {  }
         third_party_settings: {  }
 id: node.news.latest_news
@@ -118,4 +125,5 @@ content:
     third_party_settings: {  }
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_country: true

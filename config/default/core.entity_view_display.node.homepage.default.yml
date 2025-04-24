@@ -4,14 +4,10 @@ status: true
 dependencies:
   config:
     - node.type.homepage
-    - system.menu.footer
-    - system.menu.main
     - views.view.articles
     - views.view.frontpage
   module:
     - layout_builder
-    - layout_discovery
-    - system
     - user
     - views
 third_party_settings:
@@ -39,34 +35,6 @@ third_party_settings:
               items_per_page: none
             weight: 0
             additional: {  }
-          480383ab-badb-41d9-b621-73d5426b8c88:
-            uuid: 480383ab-badb-41d9-b621-73d5426b8c88
-            region: first
-            configuration:
-              id: 'system_menu_block:main'
-              label: 'Main navigation'
-              label_display: visible
-              provider: system
-              context_mapping: {  }
-              level: 1
-              depth: 0
-              expand_all_items: false
-            weight: 1
-            additional: {  }
-          ac827f06-07f1-4e9d-a22c-c4d5ad8bdb38:
-            uuid: ac827f06-07f1-4e9d-a22c-c4d5ad8bdb38
-            region: first
-            configuration:
-              id: 'system_menu_block:main'
-              label: 'Main navigation'
-              label_display: visible
-              provider: system
-              context_mapping: {  }
-              level: 1
-              depth: 0
-              expand_all_items: false
-            weight: 2
-            additional: {  }
           2aefd684-7c22-48da-9cea-879bac61b4fa:
             uuid: 2aefd684-7c22-48da-9cea-879bac61b4fa
             region: second
@@ -78,27 +46,6 @@ third_party_settings:
               context_mapping: {  }
               views_label: ''
               items_per_page: '3'
-            weight: 0
-            additional: {  }
-        third_party_settings: {  }
-      -
-        layout_id: layout_onecol
-        layout_settings:
-          label: footer
-          context_mapping: {  }
-        components:
-          883db494-c176-4167-b194-3f67c5bc4e0f:
-            uuid: 883db494-c176-4167-b194-3f67c5bc4e0f
-            region: content
-            configuration:
-              id: 'system_menu_block:footer'
-              label: Footer
-              label_display: visible
-              provider: system
-              context_mapping: {  }
-              level: 1
-              depth: 0
-              expand_all_items: false
             weight: 0
             additional: {  }
         third_party_settings: {  }
