@@ -90,6 +90,10 @@ main {
   flex: 1;
 }
 
+.menu-item a.is-active {
+  background-color: var(--color-accent);
+}
+
 .site-footer,
 .region-footer {
   background-color: var(--color-primary);
