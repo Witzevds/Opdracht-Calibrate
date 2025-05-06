@@ -4,12 +4,13 @@
 
 // DDEV-created Drupal 11 settings.php from upstream default.settings.php
 
+
 /**
  * @file
  * Drupal site-specific configuration file.
  *
  * IMPORTANT NOTE:
- * This file may have been set to read-only by the Drupal installation program.
+ * This file may have been set to read-only by the Drupal installation progopenram.
  * If you make changes to this file, be sure to protect it again after making
  * your modifications. Failure to remove write permissions to this file is a
  * security risk.
